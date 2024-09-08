@@ -56,8 +56,8 @@ a {
      transition: all .3s ease-in-out;
 }
 
-h1,
-h2,
+h1 {text-align: center;}
+h2
 h3,
 h4,
 h5,
@@ -364,8 +364,9 @@ button {
      margin-top: 90px !important;
      color: #1a1a1a !important;
      font-weight: 500;
-     display: block;
+     display: inline-block;
      margin: 0 auto;
+     
 }
 
 .text-bg .read_more:hover {
