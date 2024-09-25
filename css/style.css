@@ -554,17 +554,17 @@ button {
 
 /** We Do section **/
 
-.we_do {
+.what_is_forward {
      background-color: #fff;
      padding-top: 90px;
 }
 
-.we_do .titlepage {
+.what_is_forward .titlepage {
      text-align: center;
      padding-bottom: 60px;
 }
 
-.we_do .titlepage p {
+.what_is_forward .titlepage p {
      font-size: 17px;
      line-height: 30px;
      font-weight: 400;
@@ -572,7 +572,7 @@ button {
      color: #070101;
 }
 
-.we_do .we_box {
+.what_is_forward .we_box {
      padding: 30px 30px 60px 30px;
      text-align: center;
      border: #37139a solid 1px;
@@ -582,7 +582,7 @@ button {
      height: 490px;
 }
 
-.we_do .we_box span {
+.what_is_forward .we_box span {
      font-weight: bold;
      font-size: 30px;
      color: #000000;
@@ -597,7 +597,7 @@ button {
      transition: ease-in all 0.5s;
 }
 
-.we_do .we_box h3 {
+.what_is_forward .we_box h3 {
      padding: 30px 0px 20px 0px;
      color: #070101;
      font-size: 25px;
@@ -606,7 +606,7 @@ button {
      transition: ease-in all 0.5s;
 }
 
-.we_do .we_box p {
+.what_is_forward .we_box p {
      font-size: 17px;
      color: #010103;
      line-height: 32px;
@@ -633,7 +633,7 @@ button {
      transition: ease-in all 0.5s;
 }
 
-.we_do .read_more {
+.what_is_forward .read_more {
      margin-top: 40px !important;
      margin: 0 auto;
      display: block;
@@ -641,7 +641,7 @@ button {
      color: #fff;
 }
 
-.we_do .read_more:hover {
+.what_is_forward .read_more:hover {
      background-color: #fcc10e;
 }
 
@@ -664,6 +664,11 @@ button {
 
 .team .titlepage h2 {
      color: #fff;
+}
+
+.team .titlepage h3 {
+     color: #fff;
+     font-size: 20px;
 }
 
 .team .titlepage p {
@@ -693,9 +698,16 @@ button {
 
 .team .social_box h3 {
      color: #37139a;
-     font-size: 17px;
+     font-size: 25px;
      line-height: 20px;
      padding: 12px 0px 9px 0px;
+}
+
+.team .social_box n {
+     color: #030108;
+     font-size: 20px;
+     line-height: 20px;
+     font-weight: 400;
 }
 
 .team .social_box p {
@@ -703,6 +715,10 @@ button {
      font-size: 16px;
      line-height: 20px;
      font-weight: 400;
+     text-align: left;
+     padding-left: 10%;
+     padding-right: 10%;
+
 }
 
 ul.social_team li {
