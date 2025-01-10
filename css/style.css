@@ -594,7 +594,7 @@ header {
  /* Video Box Styling */
  .demo_video .demo_video_box {
      text-align: center;
-     background-color: #fff; /* White background for the video box */
+     background-color: #ffd800; /* White background for the video box */
      border: #ffd800 solid 2px; /* Uniform 2px yellow border */
      border-radius: 10px; /* Rounded corners */
      padding: 0; /* Remove inner padding so the border is not distorted */
@@ -627,31 +627,11 @@ header {
  
  /* Hover Effect - Adjusted Border */
  .demo_video .demo_video_box:hover {
-     background-color: #ffd800; /* Change background to yellow on hover */
+     background-color: #fff; /* Change background to yellow on hover */
      border: #fff solid 2px; /* White border on hover with 2px thickness */
      transition: all 0.5s ease;
  }
- 
- /* Read More Button (if applicable) */
- .demo_video .read_more {
-     margin-top: 40px !important;
-     margin: 0 auto;
-     display: block;
-     background-color: #070101; /* Black background */
-     color: #fff;
-     padding: 10px 20px;
-     text-align: center;
-     text-decoration: none;
-     border-radius: 5px;
-     width: fit-content;
- }
- 
- .demo_video .read_more:hover {
-     background-color: #ffd800; /* Change background to yellow on hover */
-     color: #070101; /* Change text to dark color on hover */
-     transition: all 0.3s ease;
- }
- 
+
  /** End Demo Section **/
 
  
