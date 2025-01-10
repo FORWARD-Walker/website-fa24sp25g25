@@ -185,6 +185,36 @@ img {
      border: none !important;
 }
 
+header .navbar {
+     margin: 0;
+     padding: 0;
+}
+
+.navbar-nav {
+     display: flex;
+     justify-content: center; /* Centers the links horizontally */
+     align-items: center;
+     list-style-type: none;
+}
+
+.navbar-nav .nav-item {
+     margin-right: 30px; /* Adds spacing between links */
+}
+
+.navbar-nav .nav-link {
+     color: #006eff; /* Black text */
+     text-decoration: none;
+     font-size: 18px;
+     padding: 10px 15px;
+}
+
+.navbar-nav .nav-link:hover {
+     color: #006eff; /* Change color when hovered */
+     background-color: #ff9900; /* Highlight background */
+     border-radius: 5px;
+}
+
+
 .badge {
      font-weight: 500;
 }
@@ -244,85 +274,51 @@ button {
 
 
 /*-- header area --*/
-
-
-/*-- sidebar  navigation--*/
-
-.sidepanel {
-     width: 0;
-     position: fixed;
-     z-index: 9999;
-     height: 100%;
+header {
+     background-color: #ffd800; /* Yellow background */
+     padding: 10px 0;
+     position: fixed; /* Fixed at the top */
      top: 0;
      left: 0;
-     background-color: #070101;
-     overflow-x: hidden;
-     transition: 0.5s;
-     padding-top: 60px;
-}
+     width: 100%; /* Full width */
+     z-index: 1000; /* Ensure it's on top */
+  }
 
-.sidepanel a {
-     padding: 8px 8px 8px 32px;
-     text-decoration: none;
-     font-size: 18px;
-     color: #fff;
-     display: block;
-     transition: 0.3s;
-}
-
-.sidepanel a:hover {
-     color: #fcc10e;
-}
-
-.sidepanel .closebtn {
-     position: absolute;
-     top: 0;
-     right: 25px;
-     font-size: 36px;
-}
-
-.openbtn {
-     font-size: 20px;
-     cursor: pointer;
-     background-color: transparent;
-     padding: 10px 15px;
-     border: none;
-}
-
-
-/*-- marker-end sidebar  navigation--*/
-
-.sea_icon a {
-     color: #8c8c8c !important;
-}
 
 .right_bottun {
      float: right;
 }
 
+/* Fixed Header */
 .header {
      width: 100%;
      padding: 30px 30px;
      background: transparent;
-     position: absolute;
-     z-index: 999;
-}
-
-.logo {
+     position: fixed; /* Ensures the header stays at the top */
+     top: 0; /* Sticks to the top of the page */
+     left: 0; /* Ensures it spans the full width */
+     z-index: 999; /* Keeps it on top of other content */
+     display: flex;
+     justify-content: center; /* Centers the content horizontally */
+     align-items: center; /* Centers the content vertically */
+ }
+ 
+ /* Logo Styles */
+ .logo {
      text-align: center;
-     margin-top: -33px !important;
+     justify-content: center;
      border: #fff solid 2px;
-     max-width: 200px;
-     padding: 15px 0 28px 0;
-     margin: 0 auto;
-}
-
+     max-width: 200px; /* Set max width for the logo */
+     padding: 15px 0 28px 0; /* Add padding for spacing */
+     margin: 0 auto; /* Centers the logo within the header */
+     margin-bottom: 50px;
+ }
 
 /** banner section **/
 
 .banner_main {
      background: url(../images/banner.jpg);
-     padding: 310px 0px 0px 0px;
+     padding: 150px 0px 0px 0px;
      background-size: 100% 100%;
      background-repeat: no-repeat;
      min-height: 914px;
@@ -370,51 +366,9 @@ button {
 }
 
 .text-bg .read_more:hover {
-     background: #fcc10e;
+     background: #ffd800;
      color: #000 !important;
 }
-
-#banner1 .carousel-caption {
-     position: inherit;
-     padding: 0;
-}
-
-#banner1 .carousel-indicators {
-     display: none;
-}
-
-#banner1 .carousel-control-prev,
-#banner1 .carousel-control-next {
-     width: 40px;
-     height: 40px;
-     background: transparent;
-     opacity: 1;
-     font-size: 30px;
-     color: #858686;
-     border-radius: 60px;
-     top: 100%;
-}
-
-#banner1 .carousel-control-prev:hover,
-#banner1 .carousel-control-next:hover,
-#banner1 .carousel-control-prev:focus,
-#banner1 .carousel-control-next:focus {
-     color: #f6f8f7;
-}
-
-#banner1 a.carousel-control-prev {
-     position: absolute;
-     left: inherit;
-     right: 60px;
-}
-
-#banner1 a.carousel-control-next {
-     position: absolute;
-     right: 20px;
-     bottom: 10px;
-}
-
-
 /** end banner section **/
 
 .titlepage h2 {
@@ -504,239 +458,274 @@ button {
 
 /** end about section **/
 
-
-/** software section **/
-
-.software {
-     background-color: #240082;
-     margin-top: 90px;
-}
-
-.software .titlepage h2 {
-     color: #fff;
-}
-
-.software .software_img figure {
-     margin: 0;
-}
-
-.software .software_img figure img {
-     height: 660px;
-}
-
-.software .titlepage {
-     max-width: 539px;
-     width: 100%;
-     float: right;
-}
-
-.software .titlepage p {
-     color: #fff;
-     font-size: 17px;
-     line-height: 35px;
-     font-weight: 400;
-     margin-top: 30px;
-     border: #fff solid 1px;
-     padding: 40px 40px;
-}
-
-.software .read_more {
-     margin-top: 50px;
-}
-
-.software .read_more:hover {
-     background-color: #fcc10e;
-}
-
-
-/** end software section **/
-
-
-/** We Do section **/
+/** What Is Forward Section **/
 
 .what_is_forward {
-     background-color: #fff;
-     padding-top: 90px;
-}
-
-.what_is_forward .titlepage {
-     text-align: center;
-     padding-bottom: 60px;
-}
-
-.what_is_forward .titlepage p {
-     font-size: 17px;
-     line-height: 30px;
-     font-weight: 400;
-     padding-top: 10px;
-     color: #070101;
-}
-
-.what_is_forward .we_box {
-     padding: 30px 30px 60px 30px;
-     text-align: center;
-     border: #37139a solid 1px;
-     border-radius: 10px;
-     transition: ease-in all 0.5s;
+     background-color: #006eff; /* Blue background */
+     padding: 90px 40px; /* Add more padding around the section for more space */
+     color: #fff; /* White text for general content */
+ }
+ 
+ /* Title Section */
+ .what_is_forward .section_title {
+     text-align: center; /* Center the title */
+     padding-bottom: 60px; /* Space below the title */
+ }
+ 
+ .what_is_forward .section_title h2 {
+     font-size: 50px;
+     font-weight: bold;
+     color: #ffd800; /* Yellow for the section title */
+ }
+ 
+ .what_is_forward .section_title p {
+     font-size: 20px;
+     font-weight: normal;
+     color: #ffd800; /* Yellow for the section subtitle */
+ }
+ 
+ /* "What We Do" Boxes Styling */
+ .what_is_forward .we_box {
+     padding: 30px;
+     text-align: center; /* Center the content inside the boxes */
+     border: #ffd800 solid 1px; /* Yellow border */
+     border-radius: 10px; /* Rounded corners */
+     transition: all 0.5s ease; /* Smooth transition for hover effect */
      margin-bottom: 30px;
-     height: 490px;
-}
-
-.what_is_forward .we_box span {
+     height: 490px; /* Fixed height for the box */
+     background-color: #fff; /* Default white background */
+ }
+ 
+ .what_is_forward .we_box span {
      font-weight: bold;
      font-size: 30px;
-     color: #000000;
-     border: #37139a solid 2px;
+     color: #000000; /* Black color for the number inside the box */
+     border: #ffd800 solid 2px; /* Yellow border */
      width: 65px;
      height: 65px;
      display: block;
      margin: 0 auto;
-     line-height: 67px;
+     line-height: 67px; /* Center the number inside the circle */
      border-radius: 44px;
-     background-color: #fff;
-     transition: ease-in all 0.5s;
-}
-
-.what_is_forward .we_box h3 {
+     background-color: #fff; /* White background */
+     transition: all 0.5s ease; /* Smooth transition for hover effect */
+ }
+ 
+ .what_is_forward .we_box h3 {
      padding: 30px 0px 20px 0px;
-     color: #070101;
+     color: #070101; /* Dark text color for heading */
      font-size: 25px;
      line-height: 30px;
      font-weight: bold;
-     transition: ease-in all 0.5s;
-}
-
-.what_is_forward .we_box p {
+     transition: all 0.5s ease; /* Smooth transition for hover effect */
+ }
+ 
+ .what_is_forward .we_box p {
      font-size: 17px;
-     color: #010103;
+     color: #010103; /* Dark color for text */
      line-height: 32px;
-     transition: ease-in all 0.5s;
-}
-
-#hover_color:hover.we_box {
-     background-color: #37139a;
-     transition: ease-in all 0.5s;
-}
-
-#hover_color:hover.we_box span {
-     color: #37139a;
-     transition: ease-in all 0.5s;
-}
-
-#hover_color:hover.we_box h3 {
-     color: #fff;
-     transition: ease-in all 0.5s;
-}
-
-#hover_color:hover.we_box p {
-     color: #fff;
-     transition: ease-in all 0.5s;
-}
-
-.what_is_forward .read_more {
+     transition: all 0.5s ease; /* Smooth transition for hover effect */
+ }
+ 
+ /* Hover Effects */
+ .what_is_forward .we_box:hover {
+     background-color: #ffd800; /* Change background to yellow on hover */
+     transition: all 0.5s ease;
+ }
+ 
+ .what_is_forward .we_box:hover span {
+     color: #ffd800; /* Change the number color to yellow */
+     transition: all 0.5s ease;
+ }
+ 
+ .what_is_forward .we_box:hover h3 {
+     color: #fff; /* Change heading color to white */
+     transition: all 0.5s ease;
+ }
+ 
+ .what_is_forward .we_box:hover p {
+     color: #fff; /* Change paragraph text to white */
+     transition: all 0.5s ease;
+ }
+ 
+ /* Read More Button */
+ .what_is_forward .read_more {
      margin-top: 40px !important;
      margin: 0 auto;
      display: block;
-     background-color: #070101;
+     background-color: #070101; /* Black background */
      color: #fff;
-}
-
-.what_is_forward .read_more:hover {
-     background-color: #fcc10e;
-}
-
-
-/** end We Do section **/
-
-
-/** Our  team section **/
-
-.team {
-     background: #37139a;
-     margin-top: 90px;
-     padding: 90px 0 60px 0;
-}
-
-.team .titlepage {
+     padding: 10px 20px;
      text-align: center;
-     padding-bottom: 60px;
-}
+     text-decoration: none;
+     border-radius: 5px;
+     width: fit-content;
+ }
+ 
+ .what_is_forward .read_more:hover {
+     background-color: #ffd800; /* Change background to yellow on hover */
+     color: #070101; /* Change text to dark color on hover */
+     transition: all 0.3s ease;
+ }
+ 
+ /** End What Is Forward Section **/
+ 
+/** Demo Section **/
 
-.team .titlepage h2 {
-     color: #fff;
-}
-
-.team .titlepage h3 {
-     color: #fff;
-     font-size: 20px;
-}
-
-.team .titlepage p {
-     font-size: 17px;
+.demo_video {
+     background-color: #006eff; /* Blue background */
+     padding: 90px 40px; /* Add more padding around the section for more space */
+     color: #fff; /* White text for general content */
+ }
+ 
+ /* Title Section */
+ .demo_video .titlepage {
+     text-align: left; /* Align the title to the left */
+     padding-top: 30px;
+     padding-bottom: 30px; /* Space below the title */
+ }
+ 
+ .demo_video .titlepage h2 {
+     font-size: 50px;
+     font-weight: bold;
+     color: #ffd800; /* Yellow for the section title */
+ }
+ 
+ /* Video Box Styling */
+ .demo_video .demo_video_box {
+     text-align: center;
+     background-color: #ffd800; /* White background for the video box */
+     border: #ffd800 solid 2px; /* Uniform 2px yellow border */
+     border-radius: 10px; /* Rounded corners */
+     padding: 0; /* Remove inner padding so the border is not distorted */
+     transition: all 0.5s ease; /* Smooth transition for hover effect */
+ }
+ 
+ /* Video Styling */
+ .demo_video .demo_video_box figure {
+     margin: 0;
+ }
+ 
+ .demo_video .demo_video_box video {
+     width: 100%; /* Make video responsive */
+     border-radius: 10px; /* Round the corners of the video */
+ }
+ 
+ /* Demo Caption Section */
+ .demo_video .demo_video_caption {
+     text-align: left;
+     padding-top: 20px;
+ }
+ 
+ .demo_video .demo_video_caption p {
+     font-size: 18px;
+     color: #ffd800; /* Yellow text color */
      line-height: 30px;
      font-weight: 400;
-     padding-top: 10px;
-     color: #fff;
-}
+     margin-top: 10px;
+ }
+ 
+ /* Hover Effect - Adjusted Border */
+ .demo_video .demo_video_box:hover {
+     background-color: #fff; /* Change background to yellow on hover */
+     border: #fff solid 2px; /* White border on hover with 2px thickness */
+     transition: all 0.5s ease;
+ }
+ 
+ /** End Demo Section **/
 
-.team .team_box {
+ 
+/** Our Team Section **/
+
+/* General Section Styling */
+.our_team {
+     background-color: #006eff; /* Blue background */
+     padding: 100px 0; /* Padding to create space around the section */
+     color: #fff; /* White text for contrast */
+  }
+  
+  .our_team .section_title {
      text-align: center;
+     color: #ffd800; /* Yellow for the section title */
+     font-size: 36px;
      margin-bottom: 30px;
-}
-
-.team .team_box figure {
+  }
+  
+  .our_team .section_title h2 {
      margin: 0;
-}
-
-.social_box {
-     background: #fff;
-     margin: -67px 20px 0px 20px;
-     z-index: 999;
-     position: relative;
-     padding: 23px 0;
-}
-
-.team .social_box h3 {
-     color: #37139a;
-     font-size: 25px;
-     line-height: 20px;
-     padding: 12px 0px 9px 0px;
-}
-
-.team .social_box n {
-     color: #030108;
-     font-size: 20px;
-     line-height: 20px;
-     font-weight: 400;
-}
-
-.team .social_box p {
-     color: #030108;
-     font-size: 16px;
-     line-height: 20px;
-     font-weight: 400;
-     text-align: left;
-     padding-left: 10%;
-     padding-right: 10%;
-
-}
-
-ul.social_team li {
-     display: inline-block;
-}
-
-ul.social_team li a {
+     font-size: 50px; /* Larger title */
+     font-weight: bold;
+  }
+  
+  .our_team .team_description {
+     text-align: center;
+     font-size: 18px;
+     color: #fff;
+     padding: 20px;
+     max-width: 800px;
+     margin: 0 auto 40px; /* Center the description with margin */
+  }
+  
+  /* Team Member Cards */
+  .team_member_cards {
      display: flex;
-     align-items: center;
      justify-content: center;
-     font-size: 25px;
-     border-radius: 60px;
-     margin: 0 15px;
-     color: #37139a;
-}
+     flex-wrap: wrap; /* Wrap cards on smaller screens */
+     gap: 30px; /* Space between cards */
+  }
+  
+  .team_member_card {
+     background-color: #fff; /* White background for cards */
+     color: #030108; /* Dark text color for card */
+     border-radius: 10px; /* Rounded corners */
+     padding: 20px;
+     width: 350px; /* Fixed width for each card */
+     height: 750px;
+     text-align: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow around the cards */
+     transition: all 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .team_member_card:hover {
+     transform: translateY(-10px); /* Hover effect to lift the card */
+     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+  }
+  
+  .team_member_card img {
+     width: 100%;
+     height: 300px;
+     object-fit: cover;
+     border-radius: 10px; /* Rounded image corners */
+     margin-bottom: 15px;
+  }
+  
+  .team_member_card h3 {
+     font-size: 22px;
+     color: #006eff; /* Blue for member's name */
+     margin-bottom: 10px;
+  }
+  
+  .team_member_card p {
+     font-size: 16px;
+     color: #030108; /* Dark text color for description */
+     margin-bottom: 15px;
+  }
+  
+  .team_member_card .social_links a {
+     display: inline-block;
+     font-size: 18px;
+     margin: 0 10px;
+     color: #006eff;
+     text-decoration: none;
+     transition: color 0.3s ease;
+  }
+  
+  .team_member_card .social_links a:hover {
+     color: #ffd800; /* Yellow on hover */
+  }
+  
+  /** End Our Team Section **/
 
-
-/** end Our  team section **/
 
 
 /** contact section **/
@@ -759,7 +748,7 @@ ul.social_team li a {
 }
 
 .con_bg {
-     background-color: #37139a;
+     background-color: #006eff;
 }
 
 .padding_right2 {
@@ -955,13 +944,13 @@ ul.location_form li a {
 
 /** footer **/
 
-.footer {
-     background: #1b1b1b;
-     padding-top: 90px;
-     margin-top: 90px;
-     text-align: center;
-}
-
+footer {
+     margin-top: 0;
+     padding-top: 10px;
+     padding-bottom: 100px;
+     background-color: #ffd800;
+     color: #fff;
+  }
 .footer h3 {
      color: #fff;
      font-size: 40px;
@@ -1080,7 +1069,4 @@ ul.social_icon li a:hover {
      color: #37139a;
 }
 
-
 /** end footer **/
-
-
