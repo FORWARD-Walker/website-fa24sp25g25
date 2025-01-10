@@ -36,25 +36,27 @@
          <div class="loader"><img src="images/loading.gif" alt="#" /></div>
       </div>
       <!-- end loader -->
-      <div id="mySidepanel" class="sidepanel">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-         <a href="index.html">Home</a>
-         <a href="#about">About</a>
-         <a href="#what_is_forward">What is Forward?</a>
-         <a href="#team">Our Team</a>
-      </div>
-      <!-- header -->
+      <!-- Header with Menu -->
       <header>
-         <!-- header inner -->
-         <div class="header">
+         <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+               <a class="navbar-brand" href="index.html">Group 25 FORWARD</a>
+               <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                  <li class="nav-item"><a class="nav-link" href="what_is_forward.html">What is Forward?</a></li>
+                  <li class="nav-item"><a class="nav-link" href="demo_video.html">FORWARD Demo Video</a></li>
+                  <li class="nav-item"><a class="nav-link" href="our_team.html">Our Team</a></li>
+               </ul>
+            </div>
+         </nav>
+      </header>
+      <!-- end header -->
+      <!-- banner -->
+      <section class="banner_main">
+         <div id="banner1">
             <div class="container-fluid">
                <div class="row">
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                     <div class="sea_icon d_none ">
-                        <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
-                     </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col logo_section">
                      <div class="full">
                         <div class="center-desk">
                            <div class="logo">
@@ -62,421 +64,24 @@
                            </div>
                         </div>
                      </div>
-                  </div>
-                  <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-                     <div class="right_bottun">
-                        <button class="openbtn" onclick="openNav()"><img src="images/menu_icon.png" alt="#"/> </button> 
-                     </div>
-                  </div>
-               </div>
+                </div>
             </div>
-         </div>
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
-      <section class="banner_main">
-         <div id="banner1" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-               <li data-target="#banner1" data-slide-to="0" class="active"></li>
-               <li data-target="#banner1" data-slide-to="1"></li>
-               <li data-target="#banner1" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-               <div class="carousel-item active">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <div class="text-bg">
-                           <h1>forward</h1>
-                           <span>Walker</span>
-                           <div></div>
-                           <a class="read_more" href="./FORWARD_Divide_and_Conquer.pdf">Divide and Conquer</a>
-                           <a class="read_more" href="./sd1_paper_90.pdf">SD1 Research Paper</a>
-                           <a class="read_more" href="#">Conference Paper</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <div class="text-bg">
-                           <h1>forward</h1>
-                           <span>Walker</span>
-                           <div></div>
-                           <a class="read_more" href="./Divide and Conquer.pdf">Divide and Conquer</a>
-                           <a class="read_more" href="#">SD1 Research Paper</a>
-                           <a class="read_more" href="#">Conference Paper</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="carousel-item">
-                  <div class="container">
-                     <div class="carousel-caption">
-                        <div class="text-bg">
-                           <h1>forward</h1>
-                           <span>Walker</span>
-                           <div></div>
-                           <a class="read_more" href="./Divide and Conquer.pdf">Divide and Conquer</a>
-                           <a class="read_more" href="#">SD1 Research Paper</a>
-                           <a class="read_more" href="#">Conference Paper</a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+            <div class="text-bg">
+               <h1>forward</h1>
+               <span>Walker</span>
+               <div></div>
+               <a class="read_more" target="_blank" href="./FORWARD_Divide_and_Conquer.pdf">Divide and Conquer</a>
+               <a class="read_more" target="_blank" href="./sd1_paper_90.pdf">SD1 Research Paper</a>
+               <a class="read_more" target="_blank" href="#">Conference Paper</a>
             </div>
-            <a class="carousel-control-prev" href="#banner1" role="button" data-slide="prev">
-            <i class="fa fa-arrow-left" aria-hidden="true"></i>
-            </a>
-            <a class="carousel-control-next" href="#banner1" role="button" data-slide="next">
-            <i class="fa fa-arrow-right" aria-hidden="true"></i>
-            </a>
          </div>
       </section>
-      <!-- end banner -->
-      <!-- about section -->
-      <!--<div id="about" class="about">
-         <div class="container">
-            <div class="row ">
-               <div class="col-md-5">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <div class="titlepage">
-                           <h2>About</h2>
-                           <p> sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud  sit amet, consectetur adipiscing elit, sed do </p>
-                        </div>
-                     </div>
-                     <div class="col-md-12">
-                        <div class="about_img">
-                           <figure><img src="images/about_img.png" alt="#"/></figure>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-7">
-                  <div class="about_right">
-                     <figure><img src="images/about_right.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div> -->
-      <!-- about section -->
-      <!-- software section -->
-      <!--<div class="software">
-         <div class="container-fluid">
-            <div class="row d_flex">
-               <div class="col-md-6">
-                  <div class="titlepage">
-                     <h2>Bruh</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud </p>
-                     <a class="read_more" href="#">Click here</a>
-                  </div>
-               </div>
-               <div class="col-md-6 padding_right2">
-                  <div class="software_img">
-                     <figure><img src="images/software_img.jpg" alt="#"/></figure>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>-->
-      <!-- software section -->
-      <!-- We Do section -->
-      <div id="what_is_forward" class="what_is_forward">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>What is FORWARD?</h2>
-                     <h3>Feedback Oriented Routing and Walker Assistance with Responsive Direction </h3>
-                     <p><i>"FORWARD autonomously guides the user through their environment, providing access to the outside world like never before."</i><br>- A Great Man</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div id="hover_color" class="we_box">
-                     <span>1</span>
-                     <h3>Obstacle Detection</h3>
-                     <p>Notify the user of obstacles ahead. Sensor fusion allows for the most accurate ranging data.</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div id="hover_color" class="we_box">
-                     <span>2</span>
-                     <h3>Object Identification</h3>
-                     <p>Computer Vision and image processing allow FORWARD to classify the danger level of detected hazards.</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div id="hover_color" class="we_box">
-                     <span>3</span>
-                     <h3>Obstacle Avoidance</h3>
-                     <p>FORWARD provides haptic and audio feedback to guide the user safely, and also provides steering and stability assistance.</p>
-                  </div>
-               </div>
-               <div class="col-md-12">
-                  <a class="read_more" href="#">Read More</a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end We Do section -->
-      <!-- Our  team section -->
-      <div id="team" class="team">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>FORWARD Design Team</h2>
-                     <p>(Group 25)</p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-4">
-                  <div class="team_box">
-                     <figure><img src="images/team_img1.jpg" alt="#"/></figure>
-                     <div class="social_box">
-                        <ul class="social_team">
-                           <li><a href="https://www.linkedin.com/in/morgan-snyder-38298421b/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <h3>Morgan Snyder</h3>
-                        <n><strong>Avoidance Lead</strong></n>
-                        <p>Morgan Snyder is a senior graduating with a BS in Electrical Engineering. She has interned at ZIO, a systems integrator for commercial and residental lighting and A/V, for over two years and has aspirations to either work in robotics, circuit design, or semiconductor manufacturing upon graduation.</p>                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="team_box">
-                     <figure><img src="images/team_img2.jpg" alt="#"/></figure>
-                     <div class="social_box">
-                        <ul class="social_team">
-                           <li><a href="www.linkedin.com/in/matthew-morello-772860156"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <h3>Matthew Morello</h3>
-                        <n><strong>Identification Lead</strong></n>
-                        <p>Matthew Morello is a senior at UCF, graduating with his BS in Computer Engineering. He has worked as a software support engineer at Accursoft Corporation in Tampa, and is now working as a IT&E Engineering CWEP at Lockheed Martin. He hopes to work in GNC software development after graduating.</p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="team_box">
-                     <figure><img src="images/team_img3.jpg" alt="#"/></figure>
-                     <div class="social_box">
-                        <ul class="social_team">
-                           <li><a href="https://www.linkedin.com/in/tobiah-bower/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        </ul>
-                        <h3>Tobiah Bower</h3>
-                        <n><strong>Detection Lead<strong></n>
-                        <p>Tobiah is a senior graduating with his BS in Electrical Engineering, with a focus in Signal Processing and Communications. He is currently a CWEP at Lockheed Martin in Systems Engineering. After graduation, Tobiah is pursuing a master's degree in Electrical Engineering with focuses in GNC.<p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- end Our  team section -->
-      <!-- contact section -->
-      <!--
-      <div id="contact" class="contact">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Request  A  Call  Back</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="con_bg">
-            <div class="container-fluid">
-               <div class="row">
-                  <div class="col-md-6">
-                     <form id="request" class="main_form">
-                        <div class="row">
-                           <div class="col-md-12 ">
-                              <input class="contactus" placeholder="Name" type="type" name="Name"> 
-                           </div>
-                           <div class="col-md-12">
-                              <input class="contactus" placeholder="Email" type="type" name="Email"> 
-                           </div>
-                           <div class="col-md-12">
-                              <input class="contactus" placeholder="Phone Number" type="type" name="Phone Number">                          
-                           </div>
-                           <div class="col-md-12">
-                              <input class="contactusmess" placeholder="Message" type="type" Message="Name">
-                           </div>
-                           <div class="col-md-12">
-                              <button class="send_btn">Send</button>
-                           </div>
-                           <div class="col-md-12">
-                              <ul class="location_form">
-                                 <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a>
-                                    (+71) 1234567890 (+71) 1234567890
-                                 </li>
-                                 <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a>demo@gmail.com</li>
-                              </ul>
-                           </div>
-                           <div class="col-md-12">
-                              <ul class="social_icon">
-                                 <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                 <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                              </ul>
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-                  <div class="col-md-6 padding_right2">
-                     <div class="map_section">
-                        <div id="map">
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      -->
-      <!-- end contact section -->
-      <!--
-      <div id="testimonial" class="testimonial">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="titlepage">
-                     <h2>Testimonials</h2>
-                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </p>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-md-12">
-                  <div id="myCarousel" class="carousel slide testimonial_Carousel " data-ride="carousel">
-                     <ol class="carousel-indicators">
-                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#myCarousel" data-slide-to="1"></li>
-                        <li data-target="#myCarousel" data-slide-to="2"></li>
-                     </ol>
-                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                           <div class="container">
-                              <div class="carousel-caption ">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="testimonial_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Due markes <br><span class="blu">Rental</span></h3>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                          <i><img src="images/test.png" alt="#"/></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="testimonial_box">
-                                          <figure><img src="images/our.png" alt="#"/></figure>
-                                          <h3>Due markes <br><span class="blu">Rental</span></h3>
-                                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                          <i><img src="images/test.png" alt="#"/></i>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                        <div class="carousel-item">
-                           <div class="container">
-                              <div class="carousel-caption">
-                                 <div class="row">
-                                    <div class="col-md-12">
-                                       <div class="full cross_layout">
-                                          <div class="testimonial_box">
-                                             <figure><img src="images/our.png" alt="#"/></figure>
-                                             <h3>Due markes <br><span class="blu">Rental</span></h3>
-                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit ess</p>
-                                             <i><img src="images/test.png" alt="#"/></i>
-                                          </div>
-                                       </div>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                     <i class='fa fa-angle-left'></i>
-                     </a>
-                     <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                     <i class='fa fa-angle-right'></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      -->
-      <!-- end testimonial section -->
-      <!--
-      <footer>
-         <div class="footer">
-            <div class="container">
-               <div class="row">
-                  <div class="col-md-4">
-                     <h3>Useful links</h3>
-                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, </p>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="fid_box">
-                        <h3>Find us  </h3>
-                        <ul class="location_icon">
-                           <li><a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i></a><br> It is a long established fact that a <br>reader will be distracted</li>
-                           <li><a href="#"><i class="fa fa-phone" aria-hidden="true"></i></a><br>
-                              (+71) 1234567890<br> (+71) 1234567890
-                           </li>
-                           <li><a href="#"><i class="fa fa-envelope" aria-hidden="true"></i></a><br> demo@gmail.com</li>
-                        </ul>
-                     </div>
-                  </div>
-                  <div class="col-md-4">
-                     <div class="fid_box">
-                        <h3>News letter</h3>
-                        <form class="news_form">
-                           <input class="letter_form" placeholder=" Email" type="text" name="Email">
-                           <button class="sumbit">Subscribe</button>
-                        </form>
-                        <ul class="social_icon">
-                           <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="copyright">
-               <div class="container">
-                  <div class="row">
-                     <div class="col-md-12">
-                        <p>© 2019 All Rights Reserved. Design by<a href="https://html.design/"> Free Html Templates</a></p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </footer>
-      -->
-      <!-- end footer -->
+         <!-- Footer -->
+         <footer>
+         </footer>
+        <!-- End Footer -->
+
+         
       <!-- Javascript files-->
       <script src="js/jquery.min.js"></script>
       <script src="js/popper.min.js"></script>
@@ -516,4 +121,3 @@
       <!-- end google map js -->
    </body>
 </html>
-
